@@ -95,7 +95,7 @@
     transform: rotate(-45deg);
   }
   
-  /* Circle */
+
   .cell.circle::before,
   .cell.circle::after,
   .board.circle .cell:not(.x):not(.circle):hover::after,
