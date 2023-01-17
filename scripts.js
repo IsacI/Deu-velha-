@@ -81,16 +81,16 @@ const swapTurns = () => {
 };
 
 const handleClick = (e) => {
-  // Colocar a marca (X ou Círculo)
+ 
   const cell = e.target;
   const classToAdd = isCircleTurn ? "circle" : "x";
 
   placeMark(cell, classToAdd);
 
-  // Verificar por vitória
+ 
   const isWin = checkForWin(classToAdd);
 
-  // Verificar por empate
+ 
   const isDraw = checkForDraw();
 
   if (isWin) {
@@ -98,7 +98,7 @@ const handleClick = (e) => {
   } else if (isDraw) {
     endGame(true);
   } else {
-    // Mudar símbolo
+   
     swapTurns();
   }
 };
